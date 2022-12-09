@@ -1,8 +1,8 @@
 import {axiosService} from "./axios.service";
-import Urls from "../costants/urls";
+import {urls} from "../costants";
 
 export const userService = {
-  getAll: () => axiosService.get(Urls.users),
-  getbyId: (id) => axiosService(`/${Urls.users}/${id}`)
+  getAll: () => axiosService.get(urls.users),
+  getbyId: (id) => axiosService(`/${urls.users}/${id}`)
 
 }

@@ -4,7 +4,7 @@ import {Users} from './components';
 export const App = () => {
     return (
         <div>
-            < Users/>
+            < Users />
 
         </div>
     );

@@ -3,13 +3,11 @@ import {userService} from "../../services";
 import {User} from "../user/User";
 
 export const Users = () => {
-    const [users, setuser] = useState([]);
+    const [users, setusers] = useState([]);
     useEffect(() => {
-        userService.getAll().then(({data}) => setuser(data))
+        userService.getAll().then(({data}) => setusers(data))
     })
-    return (
-        <div>
-            {users.map(user => <User key = {user.id} user={user} />)}
-        </div>
-    );
+    return <div>
+        {users.map(user => <User key={user.id} user={user}/>)}
+    </div>;
 };

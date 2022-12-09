@@ -1,4 +1,4 @@
-import {Users} from "./components/users/users";
+import {Users} from './components';
 
 
 export const App = () => {

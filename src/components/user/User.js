@@ -5,6 +5,7 @@ export const User = ({user}) => {
     return (
         <div>
             {id} - {name} - {email}
+
         </div>
     );
 };
